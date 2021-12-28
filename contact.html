@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./Css/form.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <script src="https://kit.fontawesome.com/79513e420e.js" crossorigin="anonymous"></script>
+    <title>DeveloperCazPortfolio</title>
+</head>
+
+<body>
+    <div class="enter">
+        <a href="./main.html">
+            <img src="./images/exit.png" alt="HTML tutorial" style="width:60px;height:60px;">
+        </a>
+    </div>
+
+
+
+    <div id="introbox" class="p-2 rounded-lg m-3 text-center">
+        <h1 id="intro" class="display-4">CONTACT FORM</h1><br>
+    </div>
+    <div class="container">
+        <!-- subject -->
+        <div class="form-group">
+            <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+                <input type="text" name="subject" placeholder="Subject" />
+
+                <!-- message -->
+                <textarea name="text" placeholder="Message"></textarea>
+                <input type="hidden" name="access_token" value="l7bdvhkv7650wpssfrhhfqxa" />
+                <!-- return urls can be fully qualified -OR-
+         start with / for root relative -OR-
+         start with . for url relative -->
+
+                <input type="hidden" name="success_url" value="https://caz1502.github.io/Updated-Portfolio-Page-2/" />
+                <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+
+                <!-- email -->
+                <!-- set the reply-to address -->
+                <input type="text" name="reply_to" placeholder="Your Email" />
+
+                <!-- telephone number -->
+                <!-- to append extra fields, use the extra_ prefix.
+        Entries will be appended to your message body. -->
+                <input type="text" name="extra_phone_number" placeholder="Phone Number" />
+
+                <!-- to split your message into 160 chars
+         for an sms gateway -->
+                <!-- <input type="hidden"
+                name="sms_format" value="true" /> -->
+
+                <!-- send -->
+                <input id="submit_form" type="submit" value="Send" />
+                <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+                <br><br>
+                <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
+            </form>
+
+        </div>
+
+        <!-- optional, prevents the submit button from being pressed more than once -->
+        <script>
+            var submitButton = document.getElementById("submit_form");
+            var form = document.getElementById("email_form");
+            form.addEventListener("submit", function (e) {
+                setTimeout(function () {
+                    submitButton.value = "Sending...";
+                    submitButton.disabled = true;
+                }, 1);
+            });
+
+            document.addEventListener("submit", function (event) {
+                location = "./main.html";
+            }, false);
+
+
+
+
+        </script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+/* landing page styleing */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../images/background1.png);
+  display: table;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+}
+
+/* to centre vertically */
+.container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* to sentre horizonitally */
+.row {
+  padding-bottom: 2rem;
+  width: 100% !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+/* image sizing */
+img {
+  height: 10rem;
+  width: 10rem;
+  transition: transform 0.2s;
+}
+
+/* grow on hover */
+img:hover {
+  transform: scale(1.5);
+}
+
+/* animation for blocks */
+.mycustom_class1.w3-animate-top {
+  animation: 2s ease 0s normal none 1 running animatetop;
+}
+
+.mycustom_class2.w3-animate-top {
+  animation: 6s ease 0s normal none 1 running animatetop;
+}
+
+.mycustom_class3.w3-animate-top {
+  animation: 7s ease 0s normal none 1 running animatetop;
+}
+
+.mycustom_class4.w3-animate-top {
+  animation: 9s ease 0s normal none 1 running animatetop;
+}
+
+.mycustom_class5.w3-animate-top {
+  animation: 11s ease 0s normal none 1 running animatetop;
+}
+
+.mycustom_class1.w3-animate-bottom {
+  animation: 2s ease 0s normal none 1 running animatebottom;
+}
+
+.mycustom_class2.w3-animate-bottom {
+  animation: 4s ease 0s normal none 1 running animatebottom;
+}
+
+.mycustom_class3.w3-animate-bottom {
+  animation: 6s ease 0s normal none 1 running animatebottom;
+}
+
+.mycustom_class4.w3-animate-bottom {
+  animation: 8s ease 0s normal none 1 running animatebottom;
+}
+
+.mycustom_class5.w3-animate-bottom {
+  animation: 10s ease 0s normal none 1 running animatebottom;
+}
+
+/* enter sign */
+.enter {
+  padding: 15px;
+}
