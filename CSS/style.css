@@ -42,7 +42,7 @@ img {
 
 /* grow on hover */
 img:hover {
-  transform: scale(1.5);
+  transform: scale(1.8);
 }
 
 /* animation for blocks */
@@ -88,5 +88,6 @@ img:hover {
 
 /* enter sign */
 .enter {
-  padding: 15px;
+  margin-top: 2rem;
+  margin-right: 3rem;
 }

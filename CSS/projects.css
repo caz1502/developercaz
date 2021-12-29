@@ -2,7 +2,6 @@ body {
   height: 100vh;
   width: 100vw;
   background-image: url(../images/background1.png);
-  display: table;
   position: absolute;
   background-repeat: no-repeat;
   background-position: center center;
@@ -13,22 +12,78 @@ body {
   background-attachment: fixed;
 }
 
+.intro {
+  text-align: center;
+  color: white;
+}
+
+hr {
+  width: 40%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 
 .card-columns {
-width: 85%;
-height: 85;
- margin: auto;
- margin-top: 8rem;
- margin-bottom: 8rem; 
-
+  width: 80%;
+  height: 85;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 /* enter sign */
 .enter {
-  padding: 15px;
+  margin-top: 2rem;
+  margin-left: 3rem;
 }
 
 /* grow on hover */
-img:hover {
-  transform: scale(1.5);
+.enter img:hover {
+  transform: scale(1.8);
+}
+
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.fab {
+  font-size: 20px;
+}
+
+/* dog front end and back end */
+.flip-card {
+  background-color: transparent;
+  width: 90%;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner img {
+  width: 15rem;
+  height: 30rem;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
 }
