@@ -14,8 +14,13 @@ body {
 
 .intro {
   text-align: center;
-  color: white;
+  color: #151e3d;
 }
+
+.card-title {
+  color: #151e3d;
+}
+
 
 hr {
   width: 40%;
@@ -30,6 +35,10 @@ hr {
   margin-right: auto !important;
 }
 
+.card {
+  background-color: #E0EAFC !important;
+}
+
 /* enter sign */
 .enter {
   margin-top: 2rem;
@@ -41,9 +50,9 @@ hr {
   transform: scale(1.8);
 }
 
-
+/* shrink on hover */
 .card img:hover {
-  transform: scale(1.1);
+  transform: scale(0.8);
 }
 
 .fab {
