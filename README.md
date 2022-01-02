@@ -1,6 +1,6 @@
 ![License](https://img.shields.io/static/v1?label=License&message=MIT&color=blue)
 
-# Updated-Portfolio-Page-2
+# The Blue Room
 
 
 Live Application Link 👀 **https://caz1502.github.io/developercaz/ **
@@ -10,7 +10,7 @@ Live Application Link 👀 **https://caz1502.github.io/developercaz/ **
 
 ## Description
 ```md
-
+Updated Portfolio
 ```
 
 ## The Requirements
@@ -59,7 +59,9 @@ Live Application Link 👀 **https://caz1502.github.io/developercaz/ **
 ---
 
 ## Images / Video
-![Tech-Blog]()
+<img src="./assets/images/portfolio.png" width="650">
+
+![PortfolioGif](./assets/images/portfolio.gif)
 
 
 ---
@@ -67,7 +69,7 @@ Live Application Link 👀 **https://caz1502.github.io/developercaz/ **
 ## Apps/Programmes/Platforms
 
 * Visual Studio Code
-  
+* Sceencastify  
 ---
 
 ## Languages

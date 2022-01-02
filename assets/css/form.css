@@ -5,7 +5,7 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(#ee9ca7, #ffdde1);
+  background-image: linear-gradient(#659999,#2b5876,#4e4376,#659999);
   display: table;
   position: absolute;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body {
 #intro {
   font-weight: 300;
   text-align: center;
-  color:gray;
+  color:#222;
 }
 
 input[type="text"],
@@ -37,7 +37,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #ee9ca7;
+  background-color:  #d04ed6;
   color: #151e3d;
   padding: 12px 20px;
   border: none;
@@ -46,7 +46,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #d04ed6;
+  background-color:#659999;
 }
 
 .container {

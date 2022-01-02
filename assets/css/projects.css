@@ -1,7 +1,7 @@
 body {
   height: 100vh;
   width: 100vw;
- background-image: linear-gradient(#fcb045,#fd1d1d, #833ab4);
+  background-image: linear-gradient(#fcb045, #fd1d1d, #833ab4);
   position: absolute;
   background-repeat: no-repeat;
   background-position: center center;
@@ -35,7 +35,7 @@ hr {
 }
 
 .card {
-  background-color: #E0EAFC !important;
+  background-color: #e0eafc !important;
 }
 
 /* enter sign */
@@ -96,7 +96,17 @@ hr {
   transform: rotateY(180deg);
 }
 
-.carousel-item {
-width: 50%;
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
 
+.carousel-inner img {
+  width: 100%;
+  padding: 1rem; 
+}
+
+.card-img-top {
+  width: 100%;
+  padding: 1rem;
 }
