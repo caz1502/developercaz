@@ -1,3 +1,4 @@
+
 // menu bar open and close
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -21,5 +22,6 @@ form.addEventListener("submit", function (e) {
     submitButton.disabled = true;
   }, 1);
 });
+
 
 
