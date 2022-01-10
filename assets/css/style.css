@@ -9,17 +9,23 @@ body {
   height: 100vh;
   width: 100vw;
   background-image: linear-gradient(to bottom right, red, yellow);
-  place-content: center;
-  
 }
 
 .enter {
-  padding-left: 2rem;
-  padding-top: 2rem;
+  padding-left: 2em;
+  padding-top: 2em;
 }
 
 /* to centre vertically */
 .container1 {
+  display: table-cell;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+.container2 {
   display: table-cell;
   vertical-align: middle;
   margin-left: auto;
@@ -29,7 +35,7 @@ body {
 
 /* to centre horizonitally */
 .row {
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   display: flex !important;
   flex-wrap: wrap !important;
   justify-content: center;
@@ -37,19 +43,14 @@ body {
 
 /* image sizing */
 img {
-  height: 10rem;
-  width: 10rem;
-  padding-left: 10px;
+  height: 10em;
+  width: 10em;
   transition: transform 0.2s;
 }
 
 /* grow on hover */
 img:hover {
   transform: scale(1.8);
-}
-
-.container2 {
-  display: table-cell;
 }
 
 /* animation for blocks */
@@ -94,12 +95,21 @@ img:hover {
 }
 
 /* removes boxes on smaller screens */
+
+@media (max-width: 1395px) {
+  img {
+     height: 8em;
+      width: 8em;
+  }
+}
 @media (max-width: 1202px) {
   .container1,
   .enter {
     display: none;
   }
 }
+
+
 
 @media (max-width: 1202px) {
   .container1 {
@@ -111,8 +121,8 @@ img:hover {
   body {
     background-image: none;
     background-color: #bdc3c7 !important;
-    display: table-cell;
-    vertical-align: middle;
+    display: grid;
+    place-content: center;
     text-align: center;
   }
 }
@@ -125,9 +135,9 @@ img:hover {
 }
 
 h1 {
-  font-size: 2em !important;
-  position: relative;  
-  width: max-content;  
+  font-size: 1.8em !important;
+  position: relative;
+  width: max-content;
   font-family: "Source Code Pro", monospace !important;
 }
 
