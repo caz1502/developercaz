@@ -1,45 +1,51 @@
-/* landing page styleing */
+/* landing page styling */
+
+:root {
+  --background-image: linear-gradient(to bottom right, red, yellow);
+  --typewriterSpeed: 6s;
+  --typewriterCharacters: 23;
+}
 
 body {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(#833ab4, #fd1d1d, #fcb045);
+  background: var(--background-image) !important;
+  background-color: aqua;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
 }
 
-/* enter sign */
-.enter {
-  margin-top: 2rem;
-  margin-left: 3rem;
-}
 
 /* to centre vertically */
-.container {
-  /* display: table-cell; */
-  vertical-align: middle;
-  width: 100% !important;
+.container1 {
+  display: flex;
+  justify-content: center;
 }
 
 /* to centre horizonitally */
 .row {
-  padding-bottom: 2rem;
-  display: flex !important;
-  /* flex-wrap: wrap !important; */
-  display: table-cell;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
+  padding-bottom: 5rem;
+  padding-right: 2rem;
 }
 
 /* image sizing */
 img {
   height: 10rem;
   width: 10rem;
+  padding-left: 10px;
   transition: transform 0.2s;
 }
 
 /* grow on hover */
 img:hover {
   transform: scale(1.8);
+}
+
+.container2 {
+  text-align: center;
 }
 
 /* animation for blocks */
@@ -81,4 +87,82 @@ img:hover {
 
 .mycustom_class5.w3-animate-bottom {
   animation: 10s ease 0s normal none 1 running animatebottom;
+}
+
+/* removes boxes on smaller screens */
+@media (max-width: 1202px) {
+  .container1 {
+    display: none;
+  }
+}
+
+@media (max-width: 1202px) {
+  .enter {
+    display: none;
+  }
+}
+
+/* shows script on smaller screens */
+@media (min-width: 1202px) {
+  .container2 {
+    display: none;
+  }
+}
+
+h1 {
+  font-size:1.5em !important;
+  position: relative;
+  position: relative;
+  width: max-content;
+  font-family: "Source Code Pro", monospace !important;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background: var(--background-image);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+h1::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+.subtitle {
+  color: hsl(0 0% 0% / 0.7);
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
