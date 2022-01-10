@@ -3,36 +3,31 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(#833ab4,#fd1d1d,#fcb045);
-  display: table;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-attachment: fixed;
+  background-image: linear-gradient(#833ab4, #fd1d1d, #fcb045);
+}
+
+/* enter sign */
+.enter {
+  margin-top: 2rem;
+  margin-left: 3rem;
 }
 
 /* to centre vertically */
 .container {
-  display: table-cell;
+  /* display: table-cell; */
   vertical-align: middle;
-   width: 100% !important;
+  width: 100% !important;
 }
 
-
-/* to sentre horizonitally */
+/* to centre horizonitally */
 .row {
   padding-bottom: 2rem;
-  width: 100% !important;
   display: flex !important;
-  flex-wrap: wrap !important;
+  /* flex-wrap: wrap !important; */
+  display: table-cell;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-  justify-content: space-evenly;
 }
 
 /* image sizing */
@@ -41,32 +36,6 @@ img {
   width: 10rem;
   transition: transform 0.2s;
 }
-
-@media (min-width:280px) {
-    img {
-        max-width: 1rem;
-        max-height: 1rem;
-    }
-}
-
-@media (min-width:320px) {
-    img {
-        max-width: 1.4rem;
-        max-height: 1.4rem;
-    }
-}
-
-@media (min-width:768px) {
-    img {
-        max-width: 4.5rem;
-        max-height: 4.5rem;
-    }
-}
-
-
-
-
-
 
 /* grow on hover */
 img:hover {
@@ -113,10 +82,3 @@ img:hover {
 .mycustom_class5.w3-animate-bottom {
   animation: 10s ease 0s normal none 1 running animatebottom;
 }
-
-/* enter sign */
-.enter {
-  margin-top: 2rem;
-  margin-right: 3rem;
-}
-
