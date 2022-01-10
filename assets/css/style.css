@@ -19,7 +19,9 @@ body {
 .container {
   display: table-cell;
   vertical-align: middle;
+   width: 100% !important;
 }
+
 
 /* to sentre horizonitally */
 .row {
@@ -39,6 +41,32 @@ img {
   width: 10rem;
   transition: transform 0.2s;
 }
+
+@media (min-width:280px) {
+    img {
+        max-width: 1rem;
+        max-height: 1rem;
+    }
+}
+
+@media (min-width:320px) {
+    img {
+        max-width: 1.4rem;
+        max-height: 1.4rem;
+    }
+}
+
+@media (min-width:768px) {
+    img {
+        max-width: 4.5rem;
+        max-height: 4.5rem;
+    }
+}
+
+
+
+
+
 
 /* grow on hover */
 img:hover {
@@ -91,3 +119,4 @@ img:hover {
   margin-top: 2rem;
   margin-right: 3rem;
 }
+
