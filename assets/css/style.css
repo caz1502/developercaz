@@ -1,7 +1,6 @@
 /* landing page styling */
 
 :root {
-  --background-image: linear-gradient(to bottom right, red, yellow);
   --typewriterSpeed: 6s;
   --typewriterCharacters: 23;
 }
@@ -9,26 +8,31 @@
 body {
   height: 100vh;
   width: 100vw;
-  background: var(--background-image) !important;
-  background-color: aqua;
-  margin: 0;
-  min-height: 100vh;
-  display: grid;
+  background-image: linear-gradient(to bottom right, red, yellow);
   place-content: center;
-  text-align: center;
+  
 }
 
+.enter {
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
 
 /* to centre vertically */
 .container1 {
-  display: flex;
-  justify-content: center;
+  display: table-cell;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
 /* to centre horizonitally */
 .row {
-  padding-bottom: 5rem;
-  padding-right: 2rem;
+  padding-bottom: 2rem;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center;
 }
 
 /* image sizing */
@@ -45,7 +49,7 @@ img:hover {
 }
 
 .container2 {
-  text-align: center;
+  display: table-cell;
 }
 
 /* animation for blocks */
@@ -91,14 +95,25 @@ img:hover {
 
 /* removes boxes on smaller screens */
 @media (max-width: 1202px) {
+  .container1,
+  .enter {
+    display: none;
+  }
+}
+
+@media (max-width: 1202px) {
   .container1 {
     display: none;
   }
 }
 
 @media (max-width: 1202px) {
-  .enter {
-    display: none;
+  body {
+    background-image: none;
+    background-color: #bdc3c7 !important;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
   }
 }
 
@@ -110,10 +125,9 @@ img:hover {
 }
 
 h1 {
-  font-size:1.5em !important;
-  position: relative;
-  position: relative;
-  width: max-content;
+  font-size: 2em !important;
+  position: relative;  
+  width: max-content;  
   font-family: "Source Code Pro", monospace !important;
 }
 
@@ -128,13 +142,13 @@ h1::after {
 }
 
 h1::before {
-  background: var(--background-image);
+  background-color: #bdc3c7 !important;
   animation: typewriter var(--typewriterSpeed)
     steps(var(--typewriterCharacters)) 1s forwards;
 }
 
 h1::after {
-  width: 0.125em;
+  width: 0.1em;
   background: black;
   animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards,
